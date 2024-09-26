@@ -1,0 +1,66 @@
+/*parametrage et style pour le responsive*/
+@media screen and (min-width : 992px ){    
+
+/*style de la navigation : menu + logo*/
+        nav {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding : 0 3em 0 1em;   
+        }
+        .menu {
+            display: flex;
+            gap: 4em;   
+        }
+
+/*style du header : titre h1 + photo client*/
+        .ecran-titre{
+            display: flex;
+            flex-direction: row-reverse ;
+            justify-content: space-between;
+            align-items: center;
+            width: 40vw;
+            margin-top: 2em;   
+        }
+        .photo-wilder img {
+            height: 25vh;
+            width: auto;
+        }
+        
+/*style de la section 1 : articles et images*/
+        .cards {
+            display: flex;
+            flex-direction: row; 
+            justify-content: center;
+            margin: auto;
+            margin-bottom: 7em;    
+        }
+        section article {
+            height: 40vh;
+            width: 45vh;
+            margin: 0;  
+        }
+        article img {
+            height: 28vh;
+            padding-top: 2em;
+        }
+/*style de la 2e section about*/
+        .a-propos {
+            width: 35vw;
+            margin: auto;
+            margin-bottom: 5em ;
+        }
+/*style des titres*/
+        h2 {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        h3 {
+            font-size: 1.5em;
+        }  
+        h1 {
+            font-size: 3em; 
+        }
+    }

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+/*demande du client avec couleur principale qui peut changer + police + hauteur de ligne*/
+:root{
+    --main-bg-color:#A306B6;
+}
+h1, h2, h3 {
+    font-family: Montserrat;
+}
+p, a {
+    font-family: "source sans 3";
+    line-height: 1.5em;
+}
+
+/*style du header + Photo client + titre H1*/
+header{
+    background-color: var(--main-bg-color);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.photo-wilder {
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+.photo-wilder img {
+    height: 15vh;
+    margin-top: 2vh;
+    border: white solid 0.2em;
+    border-radius:50% 50% 50% 50%; 
+}
+/*style de la barre de navigation logo + menu*/
+nav {
+    margin-top: 1em;
+}
+.logo {
+    text-align: center; 
+}
+.logo img {
+    height: 2em;
+    width: auto;
+    padding-top: 0;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+    margin-top: 0vh; 
+}
+ul a {
+    text-decoration: none;
+    color: white;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/*styledes titres*/
+h1 {
+    color: white;  
+    text-align: center;
+    
+}
+h2 {
+    color: var(--main-bg-color);
+    text-align: center;
+}
+
+/*style du main et des sections*/
+main {
+    background-color: white;
+}
+
+/*style la 1ere section recent articles comprenant les articles + img + lien + h3*/
+section article {
+    background-color: #D9D9D9;
+    height: 40vh;
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 0.7em;
+}
+article img {
+    height: 25vh;
+    padding-top: 2em;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 2em;
+}
+.a-lire {
+    background-color: var(--main-bg-color);
+    padding: 0.5em 2em 0.5em 2em;
+    border-radius: 1.5em;
+    border: var(--main-bg-color);
+    color: white;
+    text-decoration: none;
+}
+.button {
+    margin-bottom: 2em;
+}
+a {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+h3 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+/*style la 2ere section about, les paragraphes*/
+.a-propos {
+    margin: 2em;
+}
+
+/*style du footer*/
+footer {
+    background-color:  #D9D9D9 ;
+    text-align: center;
+    margin-bottom: 0;
+}
+footer p {
+    margin: 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.love {
+    color: red;
+}
+.freepicks {
+    color: var(--main-bg-color);
+}
